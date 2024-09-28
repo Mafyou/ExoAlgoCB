@@ -1,6 +1,6 @@
-﻿// Code Busters
-// Dechiffrer message T9, de 0 à 9. 3-4 lettres par chiffre.
-// Input touch client, Output messages possible
+﻿//***Kata Algo * **
+//-Dechiffrer message T9, de 0 à 9. 3-4 lettres par chiffre.
+//- Input: chiffres que le client saisi, Output messages encryptés possibles
 
 namespace CodeBusters.Main
 {
@@ -15,6 +15,7 @@ namespace CodeBusters.Main
             var messages = decryptT9.GetPossibleMessages(inputKeys);
 
             Console.WriteLine($"Message is : {inputKeys}");
+            Console.WriteLine();
             foreach (var message in messages)
             {
                 Console.WriteLine(message);
